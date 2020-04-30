@@ -3,7 +3,7 @@ package com.comm.community.dto;
 public class GithubUser {
     private Long id;
     private String name;
-    private String dio;
+    private String bio;
 
     public Long getId() {
         return id;
@@ -22,10 +22,10 @@ public class GithubUser {
     }
 
     public String getDio() {
-        return dio;
+        return bio;
     }
 
     public void setDio(String dio) {
-        this.dio = dio;
+        this.bio = dio;
     }
 }

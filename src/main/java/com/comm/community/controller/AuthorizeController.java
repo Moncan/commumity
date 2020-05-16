@@ -3,7 +3,6 @@ package com.comm.community.controller;
 
 import com.comm.community.dto.AccessTokenDTO;
 import com.comm.community.dto.GithubUser;
-import com.comm.community.mapper.UserMapper;
 import com.comm.community.model.User;
 import com.comm.community.provider.GithubProvider;
 import com.comm.community.service.UserService;
@@ -50,6 +49,8 @@ public class AuthorizeController {
             String token = UUID.randomUUID().toString();
             user.setToken(token);
             user.setName(githubUser.getName());
+            user.setAccountId(String.valueOf(githubUser.getId()));
+            user.setAvatarUrl(githubUser.getAvatarUrl());
             userService.createOrUpdate(user);
             //写入cookie
             response.addCookie(new Cookie("token",token));

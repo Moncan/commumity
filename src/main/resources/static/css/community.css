@@ -37,6 +37,23 @@ body{
     margin-bottom: 15px;
 }
 
+.question-tag {
+    margin-right: 10px;
+}
+
+
+.question-related {
+    line-height: 20px;
+    font-size: 18px;
+    margin-left: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+.question-wechat {
+    width: 40%;
+}
+
 .sub-comments {
     border-radius: 5px;
     margin-top: 10px;

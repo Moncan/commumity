@@ -72,6 +72,7 @@ public class PublishController {
         question.setGmtModified(question.getGmtCreate());
         question.setId(id);
         questionService.createOrUpdate(question);
+
         return "redirect:/";
 
     }

@@ -131,3 +131,7 @@ body{
 .question-title{
     margin-top: 25px;
 }
+
+.badge-danger{
+    background-color: #c4605d;;
+}
